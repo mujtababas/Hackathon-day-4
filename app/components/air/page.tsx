@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 const Air = () => {
@@ -16,10 +17,10 @@ const Air = () => {
         </p>
         <div className="mt-6 flex justify-center gap-4 flex-wrap">
           <button className="px-6 py-2 text-sm font-semibold text-white bg-black rounded-full hover:bg-gray-800 sm:px-8 sm:py-3">
-            Notify Me
+            <Link href="/fourcompo/first">Notify Me</Link>
           </button>
           <button className="px-6 py-2 text-sm font-semibold text-white bg-black rounded-full hover:bg-gray-800 sm:px-8 sm:py-3">
-            Shop Air Max
+            <Link href="/seccompo/first">Shop Air Max</Link>
           </button>
         </div>
       </div>

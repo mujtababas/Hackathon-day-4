@@ -1,5 +1,6 @@
 "use client"
 
+import Image from "next/image";
 import React, { useState } from "react";
 
 const GEAR = () => {
@@ -28,7 +29,7 @@ const GEAR = () => {
   return (
     <div className="max-w-6xl mx-auto px-4 py-8">
       <div className="flex justify-between items-center mb-6">
-        <h2 className="text-xl font-bold">Best of Air Max</h2>
+        <h2 className="text-xl font-bold">Gear UP</h2>
         <div className="flex space-x-2">
           <button
             onClick={handlePrev}
@@ -49,7 +50,7 @@ const GEAR = () => {
         {gear.slice(currentIndex, currentIndex + 3).map((shoe) => (
           <div key={shoe.id} className="flex-shrink-0 w-1/3">
             <div className="bg-gray-100 rounded-lg p-4">
-              <img
+              <Image width={200} height={200}
                 src={shoe.img}
                 alt={shoe.name}
                 className="w-full h-40 object-contain mb-4"

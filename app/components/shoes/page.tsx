@@ -1,5 +1,6 @@
 "use client"
 
+import Image from "next/image";
 import React, { useState } from "react";
 
 const SHOES = () => {
@@ -49,7 +50,7 @@ const SHOES = () => {
         {shoes.slice(currentIndex, currentIndex + 3).map((shoe) => (
           <div key={shoe.id} className="flex-shrink-0 w-1/3">
             <div className="bg-gray-100 rounded-lg p-4">
-              <img
+              <Image width={200} height={200}
                 src={shoe.img}
                 alt={shoe.name}
                 className="w-full h-40 object-contain mb-4"

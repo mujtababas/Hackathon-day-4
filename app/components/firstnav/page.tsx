@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import React from 'react'
 import './fnav.css'
+import Link from 'next/link'
 
 const FNAV = () => {
   return (
@@ -13,13 +14,13 @@ const FNAV = () => {
                 <Image width={100} height={100} src="/skip.png" alt='skip content'></Image>
             </div>
             <ul className=''>
-                <li>Find a Store</li>
+                <li> <Link href="/seccompo/map">Find a Store</Link></li>
                 <li>|</li>
-                <li>Help</li>
+                <Link href="/fourcompo/help"><li>Help</li></Link>
                 <li>|</li>
-                <li>Join Us</li>
+                <li><Link href="/fourcompo/joinus">Join Us</Link></li>
                 <li>|</li>
-                <li>Sign In</li>
+                <li> <Link href="/seccompo/login">Sign In</Link></li>
             </ul>
         </div>
     </div>

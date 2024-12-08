@@ -60,7 +60,7 @@ const LOGIN = () => {
         </form>
 
         <p className="text-xs text-center text-gray-600 mt-4">
-          By logging in, you agree to Nike's{" "}
+          By logging in, you agree to Nikes{" "}
           <a href="#" className="underline">
             Privacy Policy
           </a>{" "}
@@ -73,7 +73,7 @@ const LOGIN = () => {
 
         <p className="text-center text-sm mt-4">
           Not a Member?{" "}
-          <a href="#" className="text-black underline font-semibold">
+          <a href="/fourcompo/joinus" className="text-black underline font-semibold">
             Join Us.
           </a>
         </p>

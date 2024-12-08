@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react';
 import { FaTwitter, FaFacebookF, FaYoutube, FaInstagram } from 'react-icons/fa';
 
@@ -9,9 +10,9 @@ const Footer = () => {
           <div>
             <ul className="space-y-2">
               <li className="font-medium text-white">FIND A STORE</li>
-              <li>BECOME A MEMBER</li>
-              <li>SIGN UP FOR EMAIL</li>
-              <li>SEND US FEEDBACK</li>
+              <li><Link href="/fourcompo/member">BECOME A MEMBER</Link></li>
+              <li><Link href="/fourcompo/member">SIGN UP FOR EMAIL</Link> </li>
+              <li><Link href="/fourcompo/first"> US FEEDBACK</Link>SEND</li>
               <li>STUDENT DISCOUNTS</li>
             </ul>
           </div>

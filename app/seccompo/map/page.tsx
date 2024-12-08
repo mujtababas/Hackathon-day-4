@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 const stores = [
@@ -58,7 +59,7 @@ const MAP = () => {
 
       {/* Image Placeholder */}
       <div className="flex-1 h-full">
-        <img
+        <Image width={200} height={200}
           src="/map.png"
           alt="Map Placeholder"
           className="w-full h-full object-cover"

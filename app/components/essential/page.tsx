@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import React from 'react';
 
 const ESSENTIALS = () => {
@@ -15,7 +16,7 @@ const ESSENTIALS = () => {
             className="w-full h-full object-cover rounded-lg shadow-md"
           />
           <button className="absolute bottom-4 left-4 bg-white text-black font-semibold py-2 px-4 rounded-full shadow-md group-hover:scale-105 transition-transform">
-            Men's
+            <Link href="/fourcompo/shoes">Mens</Link>
           </button>
         </div>
         <div className="relative group">
@@ -27,7 +28,7 @@ const ESSENTIALS = () => {
             className="w-full h-full object-cover rounded-lg shadow-md"
           />
           <button className="absolute bottom-4 left-4 bg-white text-black font-semibold py-2 px-4 rounded-full shadow-md group-hover:scale-105 transition-transform">
-            Women's
+          <Link href="/components/women">Womens</Link>
           </button>
         </div>
         <div className="relative group">
@@ -39,7 +40,7 @@ const ESSENTIALS = () => {
             className="w-full h-full object-cover rounded-lg shadow-md"
           />
           <button className="absolute bottom-4 left-4 bg-white text-black font-semibold py-2 px-4 rounded-full shadow-md group-hover:scale-105 transition-transform">
-            Kids'
+          <Link href="/thirdcompo/second">Kids</Link>
           </button>
         </div>
       </div>
